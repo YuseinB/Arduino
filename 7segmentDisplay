@@ -1,0 +1,191 @@
+/*
+8 Digits display
+http://bdss.eu
+*/
+
+  int delint = 1000;
+//inicialize segment pin
+  int A = A0;
+  int B = A1;
+  int C = A2;
+  int D = A3;
+  int E = A4;
+  int F = A5;
+  int G = A6;
+
+// the setup function runs once when you press reset or power the board
+void setup() {
+  // initialize digital pin as an output.
+  pinMode(0, OUTPUT); //pin play display
+
+  pinMode(A, OUTPUT);
+  pinMode(B, OUTPUT);
+  pinMode(C, OUTPUT);
+  pinMode(D, OUTPUT);
+  pinMode(E, OUTPUT);
+  pinMode(F, OUTPUT);
+  pinMode(G, OUTPUT); 
+
+  digitalWrite(0, LOW);//pin play display
+}
+
+// the loop function runs over and over again forever
+void loop() {
+
+  //play numbers 1,2,3.. to 0
+
+  offled();
+  n1();
+  delay(delint);
+  offled();
+  n2();
+  delay(delint);
+  offled();
+  n3();
+  delay(delint);
+  offled();
+  n4();
+  delay(delint);
+  offled();
+  n5();
+  delay(delint);
+  offled();
+  n6();
+  delay(delint);
+  offled();
+  n7();
+  delay(delint);
+  offled();
+  n8();
+  delay(delint);
+  offled();
+  n9();
+  delay(delint);
+  offled();
+  n0();
+  delay(delint);
+  offled();
+  
+  
+}
+
+void n1(){
+  digitalWrite(A, HIGH);
+  digitalWrite(B, LOW);
+  digitalWrite(C, LOW);
+  digitalWrite(D, HIGH);
+  digitalWrite(E, HIGH);
+  digitalWrite(F, HIGH);
+  digitalWrite(G, HIGH);
+  
+  }
+
+void n2(){
+  digitalWrite(A, LOW);
+  digitalWrite(B, LOW);
+  digitalWrite(C, HIGH);
+  digitalWrite(D, LOW);
+  digitalWrite(E, LOW);
+  digitalWrite(F, HIGH);
+  digitalWrite(G, LOW);
+  
+  }
+
+void n3(){
+  digitalWrite(A, LOW);
+  digitalWrite(B, LOW);
+  digitalWrite(C, LOW);
+  digitalWrite(D, LOW);
+  digitalWrite(E, HIGH);
+  digitalWrite(F, HIGH);
+  digitalWrite(G, LOW);
+  
+  }
+
+void n4(){
+  digitalWrite(A, HIGH);
+  digitalWrite(B, LOW);
+  digitalWrite(C, LOW);
+  digitalWrite(D, HIGH);
+  digitalWrite(E, HIGH);
+  digitalWrite(F, LOW);
+  digitalWrite(G, LOW);
+  
+  }
+
+void n5(){
+  digitalWrite(A, LOW);
+  digitalWrite(B, HIGH);
+  digitalWrite(C, LOW);
+  digitalWrite(D, LOW);
+  digitalWrite(E, HIGH);
+  digitalWrite(F, LOW);
+  digitalWrite(G, LOW);
+  
+  }
+
+void n6(){
+  digitalWrite(A, LOW);
+  digitalWrite(B, HIGH);
+  digitalWrite(C, LOW);
+  digitalWrite(D, LOW);
+  digitalWrite(E, LOW);
+  digitalWrite(F, LOW);
+  digitalWrite(G, LOW);
+  
+  }
+
+void n7(){
+  digitalWrite(A, LOW);
+  digitalWrite(B, LOW);
+  digitalWrite(C, LOW);
+  digitalWrite(D, HIGH);
+  digitalWrite(E, HIGH);
+  digitalWrite(F, HIGH);
+  digitalWrite(G, HIGH);
+  
+  }
+
+void n8(){
+  digitalWrite(A, LOW);
+  digitalWrite(B, LOW);
+  digitalWrite(C, LOW);
+  digitalWrite(D, LOW);
+  digitalWrite(E, LOW);
+  digitalWrite(F, LOW);
+  digitalWrite(G, LOW);
+  
+  }
+
+void n9(){
+  digitalWrite(A, LOW);
+  digitalWrite(B, LOW);
+  digitalWrite(C, LOW);
+  digitalWrite(D, LOW);
+  digitalWrite(E, HIGH);
+  digitalWrite(F, LOW);
+  digitalWrite(G, LOW);
+  
+  }
+
+void n0(){
+  digitalWrite(A, LOW);
+  digitalWrite(B, LOW);
+  digitalWrite(C, LOW);
+  digitalWrite(D, LOW);
+  digitalWrite(E, LOW);
+  digitalWrite(F, LOW);
+  digitalWrite(G, HIGH);
+  
+  }
+
+//off all segments
+void offled(){
+  digitalWrite(A, HIGH);
+  digitalWrite(B, HIGH);
+  digitalWrite(C, HIGH);
+  digitalWrite(D, HIGH);
+  digitalWrite(E, HIGH);
+  digitalWrite(F, HIGH);
+  digitalWrite(G, HIGH);
+  }
