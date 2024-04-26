@@ -5,13 +5,7 @@ http://bdss.eu
 
   int delint = 1000;
 //inicialize segment pin
-  int A = A0;
-  int B = A1;
-  int C = A2;
-  int D = A3;
-  int E = A4;
-  int F = A5;
-  int G = A6;
+  int A = A0, B = A1, C = A2, D = A3, E = A4, F = A5, G = A6;
 
 // the setup function runs once when you press reset or power the board
 void setup() {
